@@ -1,0 +1,189 @@
+.signup {
+  // flex-wrap: wrap;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  // margin: 0 18rem;
+  height: 100%;
+  padding-top: 15rem;
+
+  &__columns {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__userType__formWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__textWrapper {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    color: #8c708c;
+  }
+
+  &__heading {
+    font-size: 4rem;
+
+    @include tablet() {
+      flex-basis: 40%;
+    }
+
+    &--style {
+      font-size: 14px;
+      color: #8c708c;
+      font-family: "CooperHewitt-Bold";
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__form {
+    width: 100%;
+
+    // @include tablet() {
+    //   margin: auto;
+    // }
+
+    @include xxl() {
+      flex-direction: column;
+      flex-basis: 50%;
+    }
+  }
+
+  &__wrapper {
+    // justify-content: flex-end;
+    display: flex;
+    justify-content: center;
+
+    @include tablet() {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+
+    @include mobile() {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 12px;
+    }
+
+    svg:not(:root).svg-inline--fa {
+      overflow: visible;
+      color: grey;
+      opacity: 0.5;
+      height: 8px;
+    }
+  }
+
+  &__emailInput {
+    width: 33%;
+    height: 2rem;
+    font-size: 1rem;
+    margin: 0 1rem 0 1rem;
+
+    @include mobile() {
+      width: 58%;
+    }
+  }
+
+  &__passwordInput {
+    width: 33%;
+    height: 2rem;
+    font-size: 1rem;
+    margin: 0 1rem 0rem 1rem;
+
+    @include mobile() {
+      margin: 0 1rem 0rem 0.5rem;
+      width: 58%;
+    }
+  }
+
+  &__inputText {
+    font-size: 12px;
+    color: #8c708c;
+    font-family: "CooperHewitt-Bold";
+  }
+
+  &__heading {
+    justify-content: center;
+    color: $lightLimeGreen;
+
+    @include mobile() {
+      margin: 4rem 0;
+    }
+
+    @include tablet() {
+      flex-wrap: wrap;
+      color: $lightLimeGreen;
+      display: flex;
+      justify-content: center;
+      margin: 1rem;
+    }
+
+    @include xxl() {
+      flex-basis: 50%;
+      margin: 0rem;
+    }
+  }
+
+  &__heading--size {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mobile() {
+      font-size: 20px;
+    }
+
+    @include tablet() {
+      font-size: 2rem;
+    }
+  }
+
+  &__headingReference {
+    color: $primPurple;
+    font-size: 10px;
+    @include mobile() {
+      font-size: 6px;
+    }
+  }
+}
+
+.MuiOutlinedInput-input {
+  /* padding: 18.5px 14px; */
+  padding: 7px !important;
+}
+
+.superAdminCreatedUsers__table {
+  font-size: 10px;
+
+  .MuiTableCell-head {
+    color: $primPurple !important;
+    font-family: $font-header !important;
+    font-weight: 500;
+    line-height: 1.5rem;
+  }
+
+  .MuiTableCell-body {
+    color: $primPurple !important;
+    font-family: $font-paragraph;
+  }
+}
+
+.signUp__errorMessage {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}

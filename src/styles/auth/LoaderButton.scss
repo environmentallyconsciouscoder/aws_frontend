@@ -1,0 +1,31 @@
+.LoaderButton .spinning.glyphicon {
+  margin-right: 7px;
+  top: 2px;
+  animation: spin 1s infinite linear;
+}
+@keyframes spin {
+  from {
+    transform: scale(1) rotate(0deg);
+  }
+  to {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+.login-button {
+  height: 2rem;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  background: $MarineOliverGreen;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  cursor: pointer;
+  align-items: center;
+
+  @include mobile() {
+    font-size: 12px;
+  }
+}

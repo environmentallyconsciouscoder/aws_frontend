@@ -1,0 +1,11 @@
+.form-control {
+  border-bottom: 1px solid black;
+  width: 40%;
+  padding-left: 0.2rem;
+  background-color: rgba(153, 177, 165, 0);
+  background-clip: unset;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+/*# sourceMappingURL=form.css.map */

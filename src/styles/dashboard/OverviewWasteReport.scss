@@ -1,0 +1,55 @@
+.total__wasteReport {
+  // margin-bottom: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0;
+
+  &__accordionHeading {
+    // background: rgba(140, 112, 140, 0.4);
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $OliveYellow1;
+
+    span {
+      cursor: pointer;
+    }
+  }
+
+  &__accordionContent {
+    // background-color: rgba(153, 177, 165, 0.3);
+    // padding: 0.5rem;
+  }
+
+  &__reportHeading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  &__capping {
+    font-size: 11px;
+    color: #0f808c;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .CircularProgressbar {
+    width: 100%;
+    height: 4rem;
+  }
+
+  &__accordionContentOpening {
+    // height: 25vh;
+    opacity: 1;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    transition: all 900ms ease-in-out;
+    margin-bottom: 1rem;
+  }
+}

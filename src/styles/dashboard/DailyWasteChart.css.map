@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACf,gBAAgB,EAAE,wBAAwB;EAC1C,MAAM,EAAE,GAAG;EACX,aAAa,EAAE,IAAI;EACnB,aAAa,EAAE,GAAG;EAClB,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "DailyWasteChart.scss"
+    ],
+    "names": [],
+    "file": "DailyWasteChart.css"
+}

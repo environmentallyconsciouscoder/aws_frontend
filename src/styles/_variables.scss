@@ -1,0 +1,153 @@
+// Font
+$font-header: "CooperHewitt-Bold";
+$font-paragraph: "CooperHewitt-Book";
+$headingThreeFont: "CooperHewitt-Book";
+$headingTwoFont: "CooperHewitt-Semibold";
+
+// Colours
+$theme-colors: (
+  "Green": rgb(133, 165, 101),
+  "White": #fff,
+  "Black": #222,
+  "BlueTuckGreen": rgb(15, 128, 140),
+  "PrimPurple": rgb(140, 112, 140),
+  "DarkGreen1": rgb(47, 67, 30),
+  "GreenTurkGreen": rgb(56, 166, 126),
+  "LightPrimaryGreen": rgb(106, 217, 123),
+  "LightLimeGreen": rgb(188, 242, 107),
+  "DarkGreen2": rgb(47, 64, 30),
+  "DarkOliveGreen": rgb(68, 89, 46),
+  "PrimLimeGreen": rgb(178, 191, 80),
+  "OliveYellow1": rgb(237, 242, 99),
+  "MedBrown": rgb(140, 112, 79),
+  "GreyOliveYellow1": rgb(232, 229, 145),
+  "GreyBlueGreen": rgb(153, 177, 165),
+  "backgroundreportcards": rgba(153, 177, 165, 0.3),
+  "MarineOliverGreen": rgb(89, 135, 91),
+  "GreyLimeGreen": rgb(133, 165, 101),
+  "DarkGreen3": rgb(24, 54, 43),
+  "DarkGreen4": rgb(18, 39, 8),
+  "GreyOliveYellow2": rgb(242, 240, 196),
+  "red": rgba(255, 0, 0, 0.9),
+);
+
+@function color($key) {
+  @return map-get($theme-colors, $key);
+}
+
+$brand-primary: color("Green");
+$white: color("White");
+$black: color("Black");
+$warning: color("red");
+$button: color("GreyLimeGreen");
+$blueTuckGreen: color("BlueTuckGreen");
+$primPurple: color("PrimPurple");
+$lightLimeGreen: color("LightLimeGreen");
+$GreyBlueGreen: color("GreyBlueGreen");
+$MarineOliverGreen: color("MarineOliverGreen");
+$OliveYellow1: color("OliveYellow1");
+$backgroundreportcards: color("backgroundreportcards");
+
+$mobile: 600px;
+
+$tablet: 768px;
+$laptop: 992px;
+
+$large: 992px;
+$xl: 1200px;
+$xxl: 2000px;
+
+@mixin notMoreThanAndEqualTo700px {
+  @media (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@mixin largePhones {
+  @media (min-width: #{$mobile}) {
+    @content;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@mixin laptop {
+  @media (min-width: #{$laptop}) {
+    @content;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@mixin xl {
+  @media (min-width: #{$xl}) {
+    @content;
+  }
+}
+
+// @mixin orientation($direction) {
+//   $orientation-landscape: "(orientation:landscape)";
+//   $orientation-portrait: "(orientation:portrait)";
+
+//   @if $direction == landscape {
+//     @media #{$orientation-landscape} {
+//       @content;
+//     }
+//   }
+//   @if $direction == portrait {
+//     @media #{$orientation-portrait} {
+//       @content;
+//     }
+//   }
+// }
+
+@mixin large {
+  @media (min-width: #{$large}) {
+    @content;
+  }
+}
+
+// @mixin xl {
+//   @media (min-width: #{$xl}) {
+//     @content;
+//   }
+// }
+
+@mixin xxl {
+  @media (min-width: #{$xl}) {
+    @content;
+  }
+}
+
+@font-face {
+  font-family: "CooperHewitt-Book";
+  src: url("./cooperHewitt/CooperHewitt-Book.otf"); /* IE9 Compat Modes */
+  src: url("./cooperHewitt/CooperHewitt-Book.otf") format("woff"),
+    /* IE6-IE8 */ url("./cooperHewitt/CooperHewitt-Book.otf") format("woff2"),
+    /* Super Modern Browsers */ url("./cooperHewitt/CooperHewitt-Book.otf")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("./cooperHewitt/CooperHewitt-Book.otf")
+      format("woff"),
+    /* Safari, Android, iOS */ url("./cooperHewitt/CooperHewitt-Book.otf")
+      format("woff"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "CooperHewitt-Bold";
+  src: url("./cooperHewitt/CooperHewitt-Bold.ttf"),
+    /* IE9 Compat Modes */ /* Safari, Android, iOS */
+      url("./cooperHewitt/CooperHewitt-Bold.ttf") format("woff"); /* Legacy iOS */
+}

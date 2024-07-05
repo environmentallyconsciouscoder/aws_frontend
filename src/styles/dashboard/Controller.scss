@@ -1,0 +1,25 @@
+.switchesWrapper {
+  margin: 1rem 0;
+}
+
+.controller-wrapper {
+  // position: fixed;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // height: 60%;
+  height: 40%;
+}
+
+.capping-wrapper {
+  padding-top: 400px;
+  margin: 0px 300px;
+}
+
+.capping-info {
+  margin: 1rem 300px;
+  font-size: 14px;
+  color: $blueTuckGreen;
+  font-family: "CooperHewitt-Bold";
+}

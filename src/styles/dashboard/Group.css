@@ -1,0 +1,15 @@
+.group {
+  background-color: rgba(153, 177, 165, 0.2);
+  height: 100%;
+  margin: 1rem 0;
+}
+.group_title {
+  display: flex;
+  justify-content: center;
+  font-family: "CooperHewitt-Bold";
+  color: #0f808c;
+  font-size: 12px;
+  padding-top: 1rem;
+}
+
+/*# sourceMappingURL=Group.css.map */

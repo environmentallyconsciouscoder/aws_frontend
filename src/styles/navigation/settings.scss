@@ -1,0 +1,84 @@
+.settings {
+  flex-direction: column;
+  height: 50%;
+  display: flex;
+
+  @include mobile() {
+    margin-top: 1rem;
+    align-items: center;
+    color: $primPurple;
+  }
+
+  @include tablet() {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  @include xxl() {
+    flex-wrap: wrap;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 18rem;
+  }
+
+  &__heading {
+    font-size: 4rem;
+
+    @include tablet() {
+      flex-basis: 40%;
+    }
+
+    &--style {
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+      color: $primPurple;
+
+      @include tablet() {
+        font-size: 2rem;
+        color: $primPurple;
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+
+      @include large() {
+        font-size: 1.5rem;
+      }
+
+      @include xxl() {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__textSize {
+    font-size: 1rem;
+  }
+
+  &__wrapper {
+    justify-content: flex-end;
+    display: flex;
+
+    @include tablet() {
+      display: flex;
+      margin-bottom: 1rem;
+    }
+
+    @include mobile() {
+      justify-content: flex-end;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 12px;
+    }
+
+    svg:not(:root).svg-inline--fa {
+      overflow: visible;
+      color: grey;
+      opacity: 0.5;
+    }
+  }
+}

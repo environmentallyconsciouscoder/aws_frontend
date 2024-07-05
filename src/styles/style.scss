@@ -1,0 +1,64 @@
+@import "variables";
+@import "defaults";
+
+// EACH FILE HAS ITS OWN SCSS FILE
+
+@import "navigation/Backdrop";
+@import "navigation/MainHeader";
+@import "navigation/MainNavigation";
+@import "navigation/NavLinks";
+@import "navigation/SideDrawer";
+@import "navigation/Modal";
+@import "navigation/Settings";
+
+@import "auth/LoaderButton";
+@import "auth/Login";
+@import "auth/Footer";
+@import "auth/Signup";
+@import "auth/Tooltip";
+
+@import "dashboard/Dashboard";
+@import "dashboard/Overview";
+
+@import "dashboard/ProgressBar";
+@import "dashboard/DailyWasteChart";
+@import "dashboard/HourWasteChart";
+@import "dashboard/UserInput";
+@import "dashboard/WeeklyWaste";
+@import "dashboard/SiteTotalWaste";
+@import "dashboard/MonthlyWasteChart";
+@import "dashboard/emailSetting";
+@import "dashboard/LoaderButton";
+@import "dashboard/TotalWasteTrend";
+@import "dashboard/WeeklyWasteTrend";
+@import "dashboard/OverviewWasteReport";
+@import "dashboard/Controller";
+@import "dashboard/DisplaySettings";
+
+@import "dashboard/Targets";
+@import "dashboard/Settings";
+@import "dashboard/FoodWasteTarget";
+@import "dashboard/AiPredictionsReport";
+@import "dashboard/WasteOnADayOfTheWeek";
+@import "dashboard/DailySalesVsWasteReport";
+@import "dashboard/Group";
+@import "dashboard/PerformanceSummary";
+@import "dashboard/ProductionPreparationInputs";
+
+@import "graph/xaxis";
+
+// NEW STRUCTURE:
+
+@import "inputs/inputs";
+@import "inputs/form";
+@import "inputs/button";
+@import "inputs/labels";
+
+@import "graph/graph";
+@import "graph/accordion";
+@import "graph/draggable";
+
+// COLORS FOR THE COLOR THEME
+
+@import "color-themes/dark-theme";
+@import "color-themes/original-theme";

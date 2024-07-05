@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACG,AAAD,0CAA0B,CAAC;EACzB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;CACvB;;AAEA,AAAD,2CAA2B,CAAC;EAC1B,OAAO,EAAE,IAAI;CACd;;AAEA,AAAD,iCAAiB,CAAC;EAChB,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,OAAO;EACd,OAAO,EAAE,IAAI;CACd",
+    "sources": [
+        "TotalWasteTrend.scss"
+    ],
+    "names": [],
+    "file": "TotalWasteTrend.css"
+}

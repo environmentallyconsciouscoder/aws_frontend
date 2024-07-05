@@ -1,0 +1,199 @@
+.settings {
+  height: 100%;
+  display: flex;
+
+  &__recommendedTargets {
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__exampleBreakDown {
+      width: 100%;
+      display: flex;
+    }
+  }
+
+  &--current--targets {
+    margin-top: 1rem;
+  }
+
+  &--wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20rem;
+    @include notMoreThanAndEqualTo700px() {
+      padding: 3px;
+    }
+  }
+
+  &--wrapper-recommend-targets {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    // padding-top: 20rem;
+    @include notMoreThanAndEqualTo700px() {
+      padding: 3px;
+    }
+  }
+
+  &--targetsSelectors {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+  }
+
+  &--cspSelectors {
+    display: flex;
+    width: 51%;
+    justify-content: space-between;
+  }
+
+  &--title {
+    color: #0f808c;
+    font-family: "CooperHewitt-Bold";
+    font-size: 21px;
+    display: flex;
+    @include notMoreThanAndEqualTo700px() {
+      font-size: calc(21px * 0.7);
+    }
+  }
+
+  &--subHeading {
+    display: flex;
+    font-size: 11px;
+    font-family: "CooperHewitt-Bold";
+    color: #0f808c;
+  }
+}
+
+.MuiTypography-body2 {
+  font-family: "CooperHewitt-Bold" !important;
+}
+
+.MuiStepIcon-root.MuiStepIcon-active {
+  color: $lightLimeGreen !important;
+}
+
+.MuiStepIcon-root.MuiStepIcon-completed {
+  color: $primPurple !important;
+}
+
+.MuiButton-containedPrimary {
+  color: #fff;
+  background: $MarineOliverGreen !important;
+}
+
+.capping--table {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+
+  @include notMoreThanAndEqualTo700px() {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+.target__calculatorResults--styling {
+  @include notMoreThanAndEqualTo700px() {
+    font-size: 10px;
+  }
+}
+
+.userInput__tableCell {
+  @include notMoreThanAndEqualTo700px() {
+    justify-content: center;
+  }
+}
+
+.MuiStepper-root {
+  @include notMoreThanAndEqualTo700px() {
+    width: "100" !important;
+  }
+
+  @include notMoreThanAndEqualTo700px() {
+    padding: 24px 0 !important;
+  }
+}
+
+.MuiStepLabel-label.MuiStepLabel-active {
+  font-family: "CooperHewitt-Bold";
+
+  @include notMoreThanAndEqualTo700px() {
+    font-size: 10px !important;
+  }
+}
+
+.MuiStepLabel-label {
+  @include notMoreThanAndEqualTo700px() {
+    font-size: 10px !important;
+  }
+}
+
+.makeStyles-instructions-140 {
+  @include notMoreThanAndEqualTo700px() {
+    font-size: 10px !important;
+  }
+}
+
+.MuiSelect-select.MuiSelect-select {
+  @include notMoreThanAndEqualTo700px() {
+    font-size: 10px !important;
+  }
+}
+
+.MuiButton-label {
+  @include notMoreThanAndEqualTo700px() {
+    font-size: 10px !important;
+  }
+}
+
+.MuiMenuItem-root {
+  @include notMoreThanAndEqualTo700px() {
+    font-size: 10px !important;
+  }
+}
+
+.MuiInputBase-input {
+  @include notMoreThanAndEqualTo700px() {
+    height: 2.1876em;
+  }
+}
+
+.MuiFormHelperText-root {
+  @include notMoreThanAndEqualTo700px() {
+    margin: 0 1rem;
+    font-size: 10px !important;
+  }
+}
+
+.MuiTypography-body1 {
+  font-family: "CooperHewitt-Bold";
+
+  @include notMoreThanAndEqualTo700px() {
+    font-size: 10px !important;
+  }
+}
+
+.MuiStepLabel-label.MuiStepLabel-completed {
+  font-family: "CooperHewitt-Bold";
+
+  @include notMoreThanAndEqualTo700px() {
+    font-size: 10px !important;
+  }
+}
+
+.MuiInputBase-root {
+  @include notMoreThanAndEqualTo700px() {
+    font-size: 9px !important;
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EAEhB,gBAAgB,EAAE,wBAAwB;EAC1C,aAAa,EAAE,IAAI;EACnB,aAAa,EAAE,GAAG;CACnB",
+    "sources": [
+        "WeeklyWasteTrend.scss"
+    ],
+    "names": [],
+    "file": "WeeklyWasteTrend.css"
+}

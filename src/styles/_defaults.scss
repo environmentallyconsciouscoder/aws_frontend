@@ -1,0 +1,323 @@
+// /* DEFAULT */
+
+* {
+  box-sizing: border-box;
+  font-family: $font-paragraph;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-family: $font-paragraph;
+  color: $blueTuckGreen;
+  display: inline;
+
+  @include notMoreThanAndEqualTo700px() {
+    font-size: 10px;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-family: "CooperHewitt-Bold";
+  opacity: 0.3;
+  font-size: 15px;
+
+  @include notMoreThanAndEqualTo700px() {
+    font-size: calc(15px * 0.6);
+  }
+}
+
+.rightPadding {
+  padding-right: 3px;
+}
+
+.leftPadding {
+  padding-left: 3px;
+}
+
+h3 {
+  font-size: 12pt;
+  font-family: $headingThreeFont;
+
+  @include notMoreThanAndEqualTo700px() {
+    font-size: 13pt;
+    font-family: $headingThreeFont;
+  }
+}
+
+.active {
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 1;
+  text-decoration: underline;
+  color: $blueTuckGreen;
+  font-family: $font-header !important;
+  @include notMoreThanAndEqualTo700px() {
+    font-size: calc(15px * 0.7);
+  }
+}
+
+.inactive {
+  cursor: pointer;
+  font-size: 16px;
+  font-family: $font-header !important;
+  @include notMoreThanAndEqualTo700px() {
+    font-size: calc(15px * 0.7);
+  }
+}
+
+.App {
+  height: 100vh;
+  padding: 0;
+
+  @include notMoreThanAndEqualTo700px() {
+    padding: 1px;
+  }
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.capping {
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    color: $black;
+  }
+
+  &--displayFlex {
+    display: flex;
+  }
+
+  &__itemStyling {
+    border-bottom: 0 !important;
+    margin-left: 5px;
+
+    @include notMoreThanAndEqualTo700px() {
+      font-size: calc(15px * 0.6);
+    }
+  }
+
+  &__flex {
+    display: flex;
+  }
+
+  &__headingCappingStyling {
+    display: inline-flex;
+    margin: 0 2px;
+  }
+
+  &__hourWasteChartWrapper {
+    font-size: 11px;
+    @include notMoreThanAndEqualTo700px() {
+      font-size: calc(11px * 0.7);
+    }
+  }
+
+  &__title--fontSize {
+    @include notMoreThanAndEqualTo700px() {
+      font-size: calc(16px * 0.6);
+    }
+  }
+}
+
+.start-date {
+  font-size: 10px;
+  font-style: $headingTwoFont;
+  color: $blueTuckGreen;
+}
+
+b {
+  font-family: "CooperHewitt-Bold";
+}
+
+.applyMarginRightAndLeft {
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+.applyCooperHewittBold {
+  font-family: $font-header;
+}
+
+.applyPurpleColor {
+  color: $primPurple;
+}
+
+.reduceOpacity {
+  opacity: 1;
+}
+
+.cooperHewittBold {
+  font-family: "CooperHewitt-Bold";
+}
+
+.warning {
+  color: rgba(255, 0, 0, 0.9);
+  opacity: 1;
+  font-size: 12px;
+  font-family: "CooperHewitt-Bold";
+}
+
+.kgPoundsStyling {
+  font-family: "CooperHewitt-Bold";
+  font-size: 2rem;
+  color: #99b1a5;
+}
+
+.CSPFullLabelNameFontsize {
+  font-size: 15px;
+  @include notMoreThanAndEqualTo700px() {
+    font-size: calc(14px * 0.7);
+  }
+}
+
+.marginTop {
+  margin-top: 0.5rem;
+}
+
+.marginBottom {
+  margin-bottom: 0.5rem;
+}
+
+.marginBottomBy1rem {
+  margin-bottom: 1rem;
+}
+
+.marginBottomAndTopBy1rem {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.marginRight {
+  margin-right: 0.5rem;
+}
+
+.applyBlueTuckGreen {
+  color: $blueTuckGreen;
+}
+
+.applyGoldColor {
+  color: #d4be00 !important;
+}
+
+.showRedColor {
+  color: rgba(255, 0, 0, 0.9) !important;
+  opacity: 1;
+}
+
+#showRedColor {
+  color: rgba(255, 0, 0, 0.9) !important;
+  opacity: 1;
+}
+
+.displayFlex {
+  display: flex;
+}
+
+.displayNone {
+  display: none;
+}
+
+.accordionContentClosing {
+  height: 0;
+  opacity: 0;
+  padding: 0.5rem;
+  flex-direction: column;
+  display: flex;
+  overflow: hidden;
+  transition: all 600ms ease-in-out;
+  background: rgba(140, 112, 140, 0.4);
+}
+
+.showOnMobile {
+  display: none;
+
+  @include tablet() {
+    display: flex;
+  }
+
+  @include notMoreThanAndEqualTo700px() {
+    display: flex;
+  }
+
+  @include laptop() {
+    display: none;
+  }
+}
+
+.hideOnMobile {
+  display: flex;
+
+  @include tablet() {
+    display: none;
+  }
+
+  @include notMoreThanAndEqualTo700px() {
+    display: none;
+  }
+
+  @include laptop() {
+    display: flex;
+  }
+}
+
+.addPaddingOfHalveRem {
+  padding: 0.5rem;
+}
+
+.addHeightOfFortyVh {
+  height: 40vh;
+}
+
+.addHeightOfSixtyVh {
+  height: 60vh;
+}
+
+.clickable {
+  cursor: pointer;
+  &:hover {
+    color: $GreyBlueGreen;
+  }
+}
+
+.inputBox {
+  border: none;
+}
+
+.marginTop {
+  margin-top: 1.4rem;
+}
+
+.lightPrimaryGreenBackGroundColor {
+  background-color: rgb(242, 240, 196) !important;
+}
+
+.greyLimeGreenBackgroundColor {
+  background-color: rgb(178, 191, 80) !important;
+}
+
+.primPurpleBackgroundColor {
+  background-color: rgb(140, 112, 140);
+}
+
+.remove-tooltip {
+  @include notMoreThanAndEqualTo700px() {
+    display: none;
+  }
+}
+
+.fontSize12px {
+  font-size: 12px;
+}

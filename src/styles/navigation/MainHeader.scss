@@ -1,0 +1,25 @@
+.main-header {
+  width: 100%;
+  display: flex;
+  z-index: 5;
+  // height: 20%;
+  height: 23%;
+  position: fixed;
+  background-color: white;
+  justify-content: space-between;
+  // padding: 3rem;
+  padding: 0 3rem;
+
+  @include notMoreThanAndEqualTo700px() {
+    position: unset;
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    margin-top: 7px;
+    height: 20%;
+  }
+}
+
+// main {
+//   margin-top: 5rem;
+// }

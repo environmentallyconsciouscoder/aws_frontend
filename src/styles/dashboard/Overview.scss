@@ -1,0 +1,199 @@
+.dashboard {
+  &__overviewSitesReportHeading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  &__date__user {
+    display: flex;
+    color: $GreyBlueGreen;
+    font-size: 11px;
+    margin: 1rem;
+
+    @include mobile() {
+      margin: 0rem;
+      font-size: 10px;
+    }
+
+    @include tablet() {
+      font-size: 11px;
+      display: flex;
+    }
+
+    &__type {
+      margin: 0 10px;
+      color: $primPurple;
+      font-weight: bold;
+    }
+
+    &__name {
+      color: $blueTuckGreen;
+    }
+  }
+
+  &__overviewSitesReportProgressBarWrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  &__overviewSitesReport {
+    padding: 1rem;
+    background-color: $backgroundreportcards;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    width: 100%;
+
+    @include notMoreThanAndEqualTo700px() {
+      padding: 5px;
+      width: 100%;
+    }
+
+    &__capping {
+      font-size: 11px;
+      color: $blueTuckGreen;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 1rem;
+      width: 100%;
+
+      @include notMoreThanAndEqualTo700px() {
+        font-size: calc(11px * 0.7);
+      }
+    }
+
+    .CircularProgressbar {
+      width: 100%;
+      height: 3rem;
+    }
+
+    h2 {
+      margin: 1rem 0;
+      color: $blueTuckGreen;
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size: 1rem;
+      color: $primPurple;
+      font-weight: 600;
+
+      @include mobile() {
+        font-size: 12px;
+      }
+
+      @include tablet() {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__overviewSitesReportTable {
+    width: 100%;
+    // background-color: $backgroundreportcards;
+    // padding: 1rem;
+    border-radius: 5px;
+
+    @include notMoreThanAndEqualTo700px() {
+      display: flex;
+    }
+
+    // @include mobile() {
+    //   padding: 5px;
+    // }
+
+    // @include tablet() {
+    //   padding: 1rem;
+    // }
+
+    h3 {
+      font-size: 1rem;
+      color: $primPurple;
+      font-weight: 600;
+
+      @include mobile() {
+        font-size: 12px;
+      }
+
+      @include tablet() {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__paper {
+    width: 100% !important;
+    box-shadow: none !important;
+    background-color: rgba(153, 177, 165, 0) !important;
+  }
+
+  &__tableContainer {
+    max-height: 440 !important;
+  }
+
+  &__tableCell {
+    background-color: rgba(153, 177, 165, 0) !important;
+    padding-bottom: 0 !important;
+    border-bottom-color: rgb(237, 242, 99) !important;
+    color: $blueTuckGreen !important;
+    padding: 0rem !important;
+    font-family: $font-paragraph !important;
+    border-bottom-style: solid !important;
+
+    &__icon {
+      font-family: $font-header !important;
+      color: $GreyBlueGreen !important;
+    }
+  }
+
+  &__tableCell--style {
+    padding: 5px !important;
+    border-bottom: 0 !important;
+    font-family: $font-paragraph !important;
+    color: $primPurple !important;
+    font-size: 12px !important;
+
+    @include notMoreThanAndEqualTo700px() {
+      font-size: 10px !important;
+    }
+  }
+
+  &__radio {
+    display: flex;
+    align-items: center;
+  }
+
+  &__table {
+    // margin: auto !important;
+    border-bottom: 1px solid $OliveYellow1 !important;
+    width: 100% !important;
+
+    @include notMoreThanAndEqualTo700px() {
+      width: 100% !important;
+    }
+  }
+
+  &__siteName--color {
+    color: $blueTuckGreen;
+  }
+}
+
+.MuiTablePagination-caption {
+  flex-shrink: 0;
+  display: none;
+}
+
+.MuiTablePagination-root {
+  color: $primPurple !important;
+}
+
+.MuiTablePagination-actions {
+  color: $primPurple !important;
+}
+
+.MuiTableCell-head {
+  line-height: 1rem !important;
+}

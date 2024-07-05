@@ -1,0 +1,21 @@
+.darkTheme {
+  &__accordionHeading {
+    background: rgb(225, 231, 227);
+  }
+
+  &__reportBackgroundColor {
+    background: rgb(153, 176, 163);
+  }
+
+  &__numberColor {
+    color: rgb(255, 231, 227);
+  }
+
+  &__unselectedLabelColor {
+    color: rgb(255, 231, 227);
+  }
+
+  &__selectedLabelColor {
+    color: rgb(34, 73, 33);
+  }
+}

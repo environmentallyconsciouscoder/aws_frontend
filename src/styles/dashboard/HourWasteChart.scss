@@ -1,0 +1,120 @@
+.HourWasteChart {
+  // margin-bottom: 1rem;
+  border-radius: 5px;
+  width: 100%;
+
+  @include notMoreThanAndEqualTo700px() {
+    // padding: 5px;
+    // background-color: $backgroundreportcards;
+    // margin-bottom: 1rem;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  &__accordionHeading {
+    // background: rgba(140, 112, 140, 0.4);
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $OliveYellow1;
+
+    span {
+      cursor: pointer;
+    }
+  }
+
+  &__accordionContent {
+    // background-color: rgba(153, 177, 165, 0.3);
+    // padding: 0.5rem;
+  }
+
+  &__accordionContentOpening {
+    // height: 35vh;
+    opacity: 1;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    transition: all 900ms ease-in-out;
+    margin-bottom: 1rem;
+  }
+
+  &--CSPlabel {
+    @include notMoreThanAndEqualTo700px() {
+      font-size: 24px;
+    }
+  }
+
+  &__headingWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &--spacing {
+    display: flex;
+    justify-content: space-between;
+
+    @include mobile() {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @include tablet() {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &--dateStyling {
+    font-size: 11px;
+    font-family: "CooperHewitt-Bold";
+    @include notMoreThanAndEqualTo700px() {
+      font-size: calc(11px * 0.7);
+    }
+  }
+
+  &--CSPheadingSize {
+    font-size: 15px;
+
+    @include notMoreThanAndEqualTo700px() {
+      font-size: calc(15px * 0.6);
+    }
+  }
+
+  &__heading {
+    display: flex;
+    font-size: 11px;
+    font-family: "CooperHewitt-Bold";
+
+    @include notMoreThanAndEqualTo700px() {
+      display: none;
+    }
+  }
+
+  &--spacing--secondRow {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5rem;
+    align-items: center;
+    height: 2rem;
+
+    @include notMoreThanAndEqualTo700px() {
+      font-size: calc(10px * 0.6);
+    }
+  }
+
+  &--spacing--secondRow--csp {
+    display: flex;
+    width: 12%;
+    justify-content: space-between;
+    @include notMoreThanAndEqualTo700px() {
+      width: 20%;
+    }
+  }
+}
+
+.wastesSelector {
+  cursor: pointer;
+}

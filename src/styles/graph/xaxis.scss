@@ -1,0 +1,92 @@
+.xaxis {
+  display: flex;
+  margin-left: 2rem;
+
+  &_wrapper {
+    font-size: 6px;
+    display: flex;
+    margin-right: 1rem;
+
+    &-reduceMargin {
+      margin-right: 0.5rem;
+    }
+
+    &-addMarginLeftSix {
+      margin-left: 3.5px;
+    }
+
+    &-addMarginLeftLessThanFourWeeks {
+      margin-left: 7.5px;
+    }
+  }
+}
+
+.weekOneAxis {
+  margin-left: 1rem;
+  font-size: 6px;
+  display: flex;
+
+  &__item {
+    margin-left: 8px;
+  }
+
+  &-addMarginLeftThreePixel {
+    margin-left: 3px;
+  }
+}
+
+.weekTwoAxis {
+  margin-left: 1.7rem;
+  font-size: 6px;
+  display: flex;
+}
+
+.weekThreeAxis {
+  margin-left: 1rem;
+  font-size: 6px;
+  display: flex;
+}
+
+.weekFourAxis {
+  margin-left: 0.6rem;
+  font-size: 6px;
+  display: flex;
+}
+
+.weekFiveAxis {
+  margin-left: 1rem;
+  font-size: 6px;
+  display: flex;
+}
+
+.weekOneAxisLessThanFourWeeks {
+  margin-left: 9px;
+  font-size: 6px;
+  display: flex;
+
+  &__item {
+    margin-left: 8px;
+  }
+
+  &-addMarginLeftThreePixel {
+    margin-left: 3px;
+  }
+}
+
+.weekTwoAxisLessThanFourWeeks {
+  margin-left: 17px;
+  font-size: 6px;
+  display: flex;
+}
+
+.weekThreeAxisLessThanFourWeeks {
+  margin-left: 13px;
+  font-size: 6px;
+  display: flex;
+}
+
+.weekFourAxisLessThanFourWeeks {
+  margin-left: 0.6rem;
+  font-size: 6px;
+  display: flex;
+}

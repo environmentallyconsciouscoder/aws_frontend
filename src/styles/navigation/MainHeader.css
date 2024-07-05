@@ -1,0 +1,23 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 13 | /   @include notMoreThanAndEqualTo700px() {
+ * 14 | |     position: unset;
+ * 15 | |     display: flex;
+ * 16 | |     padding: 0;
+ * 17 | |     flex-direction: column;
+ * 18 | |     margin-top: 7px;
+ * 19 | |     height: 20%;
+ * 20 | \   }
+ *    '
+ *   src/styles/navigation/MainHeader.scss 13:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 13 \2502  \250c    @include notMoreThanAndEqualTo700px() {\a 14 \2502  \2502      position: unset;\a 15 \2502  \2502      display: flex;\a 16 \2502  \2502      padding: 0;\a 17 \2502  \2502      flex-direction: column;\a 18 \2502  \2502      margin-top: 7px;\a 19 \2502  \2502      height: 20%;\a 20 \2502  \2514    }\a    \2575 \a   src/styles/navigation/MainHeader.scss 13:3  root stylesheet";
+}

@@ -1,0 +1,10 @@
+.dashboard {
+  &__draggableReport {
+    border-radius: 5px;
+    width: 100%;
+
+    @include mobile() {
+      width: 100%;
+    }
+  }
+}

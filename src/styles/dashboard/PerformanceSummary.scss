@@ -1,0 +1,58 @@
+.performanceSummary {
+  height: 45%;
+  width: 100%;
+  padding: 0 3rem;
+  display: flex;
+
+  @include notMoreThanAndEqualTo700px() {
+    // display: none;
+    padding: 0rem;
+  }
+
+  &_section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding-top: 15rem;
+
+    @include notMoreThanAndEqualTo700px() {
+      flex-direction: column;
+      padding-top: 0rem;
+    }
+  }
+
+  &_item {
+    height: 100%;
+    width: 100%;
+    // display: flex;
+    padding: 1rem;
+    font-size: 15px;
+    flex-wrap: wrap;
+
+    // @include notMoreThanAndEqualTo700px() {
+    //   display: none;
+    // }
+  }
+
+  &-border-style {
+    border-color: #d4be00 !important;
+    border-right-style: solid;
+
+    // @include notMoreThanAndEqualTo700px() {
+    //   display: none;
+    // }
+  }
+
+  &_value {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    color: $primPurple;
+    font-size: 1.5rem;
+    font-family: "CooperHewitt-Bold";
+
+    // @include notMoreThanAndEqualTo700px() {
+    //   display: none;
+    // }
+  }
+}

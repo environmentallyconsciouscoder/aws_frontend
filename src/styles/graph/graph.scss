@@ -1,0 +1,228 @@
+.dashboard {
+  // &__draggable {
+  //   border-radius: 5px;
+  //   width: 100%;
+
+  //   @include mobile() {
+  //     width: 100%;
+  //   }
+  // }
+
+  &__graphHeight {
+    height: 11vh;
+
+    @include mobile() {
+      height: 10vh;
+    }
+  }
+
+  &__wrapperForGraph {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    @include mobile() {
+      flex-direction: column;
+    }
+
+    canvas {
+      height: 270px !important;
+      width: 600px !important;
+    }
+  }
+
+  &__wrapperForSelector {
+    font-size: 11px;
+    color: #0f808c;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+
+    @include mobile() {
+      width: 100%;
+    }
+  }
+
+  &__subHeading {
+    color: #0f808c;
+    font-family: "CooperHewitt-Bold";
+    font-size: 16px;
+
+    @include mobile() {
+      font-size: calc(16px * 0.7);
+    }
+  }
+
+  &__headings {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  &__selector {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+  }
+
+  &__axisLabel {
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    color: rgb(15, 128, 140);
+    margin-top: 6rem;
+
+    @include mobile() {
+      font-size: 10px;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.graph {
+  &__row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 0.5rem;
+  }
+
+  &__heading {
+    color: #0f808c;
+    font-family: "CooperHewitt-Bold";
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    // margin: 1rem;
+  }
+
+  &__title {
+    color: #0f808c;
+    font-family: "CooperHewitt-Bold";
+    font-size: 16px;
+  }
+
+  &__selector-spacing {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+
+    @include mobile() {
+      flex-direction: column;
+    }
+  }
+
+  &__label {
+    color: #8c708c;
+    font-size: 11px;
+    font-family: "CooperHewitt-Bold";
+  }
+
+  &__labelWrapper {
+    display: flex;
+    font-size: 11px;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 1rem;
+  }
+
+  &__message {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #0f808c;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+.dateLabel {
+  &__coverwastesSquare {
+    height: 1rem;
+    width: 1rem;
+    background-color: rgba(140, 112, 140, 0.5);
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+
+    @include mobile() {
+      height: 0.5rem;
+      width: 0.5rem;
+    }
+  }
+
+  &__preparationSquare {
+    height: 1rem;
+    width: 1rem;
+    background-color: rgba(133, 165, 101, 0.5);
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+
+    @include mobile() {
+      height: 0.5rem;
+      width: 0.5rem;
+    }
+  }
+
+  &__spoliageSquare {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    background-color: #ff8c00;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+
+    @include mobile() {
+      height: 0.5rem;
+      width: 0.5rem;
+    }
+  }
+
+  &__allWasteSquare {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    background-color: rgba(15, 128, 140, 0.5);
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+
+    @include mobile() {
+      height: 0.5rem;
+      width: 0.5rem;
+    }
+  }
+
+  &__wrapper {
+    // font-size: 1rem;
+    font-size: 12px;
+    color: #0f808c;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1rem 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0.5rem 0px 1rem 0;
+    font-family: "CooperHewitt-Bold";
+
+    @include mobile() {
+      font-size: calc(12px * 0.7);
+    }
+  }
+}
+
+.addSpaceBetween {
+  justify-content: space-between !important;
+}

@@ -1,0 +1,20 @@
+/* Error: Undefined mixin.
+ *   ,
+ * 6 | /   @include notMoreThanAndEqualTo700px() {
+ * 7 | |     display: flex;
+ * 8 | |     flex-direction: column;
+ * 9 | |     align-items: center;
+ * 10| \   }
+ *   '
+ *   src/styles/dashboard/ProgressBar.scss 6:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a   \2577 \a 6 \2502  \250c    @include notMoreThanAndEqualTo700px() {\a 7 \2502  \2502      display: flex;\a 8 \2502  \2502      flex-direction: column;\a 9 \2502  \2502      align-items: center;\a 10\2502  \2514    }\a   \2575 \a   src/styles/dashboard/ProgressBar.scss 6:3  root stylesheet";
+}

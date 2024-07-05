@@ -1,0 +1,64 @@
+.weekly__selector {
+  display: flex;
+  width: 35%;
+  justify-content: space-evenly;
+
+  @include mobile() {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arr-btn {
+  width: 20px;
+  height: 20px;
+}
+
+.week-box {
+  font-size: 11px;
+  color: rgba(133, 165, 101, 0.5);
+}
+
+.week-active {
+  color: #8c708c;
+  margin: 0px 3px;
+}
+
+.week-inactive {
+  color: rgba(133, 165, 101, 1);
+  margin: 0px 3px;
+}
+
+.my-2 {
+  margin: 1rem 0rem;
+}
+
+.year-ele {
+  margin: 0px 5px;
+  font-family: "CooperHewitt-Bold";
+}
+
+.font-bold {
+  font-family: "CooperHewitt-Bold";
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.space-between-center {
+  display: flex;
+  justify-content: center;
+}
+
+.capping {
+  display: -ms-flexbox;
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+}

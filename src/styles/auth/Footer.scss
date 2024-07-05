@@ -1,0 +1,191 @@
+.footer {
+  height: 30%;
+  display: flex;
+
+  @include mobile() {
+    display: none;
+  }
+
+  @include tablet() {
+    // height: 70%;
+    height: 30%;
+    background-color: $GreyBlueGreen;
+    width: 100%;
+    display: flex;
+  }
+
+  @include laptop() {
+    height: 30%;
+    display: flex;
+  }
+
+  &__wrapper {
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
+
+    @include mobile() {
+      display: none;
+    }
+
+    @include largePhones() {
+      display: none;
+    }
+
+    @include tablet() {
+      height: 100%;
+      width: 100%;
+      padding: 3rem;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__addressAndLogo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+
+    @include tablet() {
+      flex-basis: 25%;
+      align-self: flex-end;
+    }
+
+    @include laptop() {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    margin-bottom: 10px;
+    height: 2rem;
+    margin-right: 1rem;
+
+    @include tablet() {
+      height: 2rem;
+    }
+
+    @include laptop() {
+      margin-right: 0;
+    }
+  }
+
+  &__address {
+    font-size: 10px;
+    color: $white;
+  }
+
+  &__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    @include laptop() {
+      flex-basis: 25%;
+      flex-direction: column;
+    }
+
+    @include tablet() {
+      flex-basis: 25%;
+      align-self: flex-end;
+      margin: 1rem;
+    }
+
+    svg:not(:root).svg-inline--fa {
+      overflow: visible;
+      color: $white;
+    }
+  }
+
+  &__contactHeader--style {
+    color: $white;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 1rem;
+    margin-left: 2rem;
+
+    @include tablet() {
+      margin-left: 0rem;
+    }
+  }
+
+  &__contactIcon--style {
+    color: $white;
+    text-decoration: none;
+    font-size: 10px;
+    margin-left: 1rem;
+  }
+
+  &__heading {
+    font-size: 4rem;
+
+    // @include tablet() {
+    //   flex-basis: 40%;
+    // }
+
+    &--style {
+      font-size: 2rem;
+      display: flex;
+
+      @include tablet() {
+        font-size: 2rem;
+        color: $primPurple;
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+
+      @include large() {
+        font-size: 1.5rem;
+      }
+
+      @include xxl() {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  &__socialMedia {
+    justify-content: center;
+
+    @include tablet() {
+      flex-basis: 10%;
+      display: flex;
+      align-self: flex-end;
+    }
+
+    &--padding {
+      padding-right: 0.3rem;
+    }
+
+    .circle {
+      height: 50px;
+      width: 50px;
+      background-color: $white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      align-items: center;
+      border: 1px solid #222;
+
+      a {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    .circle svg:not(:root).svg-inline--fa {
+      overflow: visible;
+      color: #222;
+      opacity: 0.7;
+      height: 100%;
+      width: 50%;
+    }
+  }
+}

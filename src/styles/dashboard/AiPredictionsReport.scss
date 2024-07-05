@@ -1,0 +1,175 @@
+.dashboard {
+  &__aiPredictionsReport {
+    border-radius: 5px;
+    width: 100%;
+
+    @include notMoreThanAndEqualTo700px() {
+      width: 100%;
+    }
+
+    &__accordionHeading {
+      padding: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: $OliveYellow1;
+
+      span {
+        cursor: pointer;
+      }
+    }
+
+    &__accordionContentOpening {
+      opacity: 1;
+      flex-direction: column;
+      display: flex;
+      overflow: hidden;
+      transition: all 900ms ease-in-out;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__aiPredictionsReportWrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include notMoreThanAndEqualTo700px() {
+      flex-direction: column;
+    }
+  }
+
+  &__aiPredictionsReportHeading {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  &__aiPredictionsReport {
+    &__headingWrapper {
+      font-size: 11px;
+      color: #0f808c;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      align-items: center;
+
+      @include notMoreThanAndEqualTo700px() {
+        width: 100%;
+      }
+    }
+
+    &__subHeading {
+      color: #0f808c;
+      font-family: "CooperHewitt-Bold";
+      font-size: 16px;
+
+      @include notMoreThanAndEqualTo700px() {
+        font-size: calc(16px * 0.7);
+      }
+    }
+
+    &__styling {
+      font-size: 11px;
+      align-items: center;
+      display: flex;
+
+      @include notMoreThanAndEqualTo700px() {
+        font-size: calc(11px * 0.7);
+      }
+    }
+
+    &__height {
+      height: 11vh;
+
+      @include notMoreThanAndEqualTo700px() {
+        height: 10vh;
+      }
+    }
+
+    &__axisLabel {
+      display: flex;
+      justify-content: space-around;
+      font-size: 12px;
+      color: rgb(15, 128, 140);
+      margin-top: 1rem;
+
+      @include notMoreThanAndEqualTo700px() {
+        font-size: 10px;
+        margin-top: 1rem;
+      }
+    }
+
+    &__dateLabel__CSP {
+      font-size: 1rem;
+      color: #0f808c;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 1rem 0;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin: 0.5rem 0px 1rem 0;
+      font-family: "CooperHewitt-Bold";
+
+      @include notMoreThanAndEqualTo700px() {
+        font-size: calc(12px * 0.7);
+      }
+    }
+
+    &__dateLabel__CSP__coverwastesSquare {
+      height: 1rem;
+      width: 1rem;
+      background-color: rgba(140, 112, 140, 0.5);
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+      border-style: solid;
+      border-color: black;
+      border-width: thin;
+
+      @include notMoreThanAndEqualTo700px() {
+        height: 0.5rem;
+        width: 0.5rem;
+      }
+    }
+
+    &__dateLabel__CSP__preparationSquare {
+      height: 1rem;
+      width: 1rem;
+      background-color: rgba(133, 165, 101, 0.5);
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+      border-style: solid;
+      border-color: black;
+      border-width: thin;
+
+      @include notMoreThanAndEqualTo700px() {
+        height: 0.5rem;
+        width: 0.5rem;
+      }
+    }
+
+    &__dateLabel__CSP__spoliageSquare {
+      height: 1rem;
+      width: 1rem;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+      background-color: #ff8c00;
+      border-style: solid;
+      border-color: black;
+      border-width: thin;
+
+      @include notMoreThanAndEqualTo700px() {
+        height: 0.5rem;
+        width: 0.5rem;
+      }
+    }
+
+    &__timePeriodMenu {
+      display: flex;
+      width: 30%;
+      justify-content: space-evenly;
+    }
+  }
+}

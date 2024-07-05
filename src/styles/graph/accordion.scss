@@ -1,0 +1,40 @@
+.accordion {
+  &__heading {
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(237, 242, 99);
+
+    span {
+      cursor: pointer;
+    }
+  }
+
+  &__opening {
+    opacity: 1;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    transition: all 900ms ease-in-out;
+    margin-bottom: 1rem;
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+  }
+
+  &__closing {
+    height: 0;
+    opacity: 0;
+    // padding: 0.5rem;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    transition: all 600ms ease-in-out;
+    background: rgba(140, 112, 140, 0.4);
+  }
+}

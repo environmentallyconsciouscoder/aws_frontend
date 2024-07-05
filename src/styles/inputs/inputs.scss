@@ -1,0 +1,71 @@
+.inputs {
+  &__container {
+    height: 100vh;
+    // background-color: yellow;
+    display: flex;
+    padding-top: 10rem;
+  }
+
+  &__row {
+    // width: 100%;
+    // display: flex;
+    // padding-top: 5rem;
+
+    width: 100%;
+    display: flex;
+    padding-top: 5rem;
+    flex-direction: column;
+  }
+
+  &__column {
+    display: flex;
+    flex-basis: 50%;
+    height: 50%;
+    justify-content: center;
+    background-color: $backgroundreportcards;
+    margin: 3rem;
+    border-radius: 10px;
+    flex-direction: column;
+  }
+
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &__labels {
+    padding-top: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  &__wrapperForLabels {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__list__container {
+    height: 100vh;
+    display: flex;
+    padding-top: 20rem;
+    justify-content: center;
+  }
+
+  &__link-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    &-center {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.button {
+  &__wrapper {
+    display: flex;
+    margin-right: 3rem;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,279 @@
+.dashboard {
+  &__foodWasteTrackingProgress {
+    // padding: 1rem;
+    // background-color: $backgroundreportcards;
+    // margin-bottom: 1rem;
+    border-radius: 5px;
+    width: 100%;
+
+    @include notMoreThanAndEqualTo700px() {
+      // padding: 5px;
+      width: 100%;
+    }
+
+    &__accordionHeading {
+      // background: rgba(140, 112, 140, 0.4);
+      padding: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: $OliveYellow1;
+
+      span {
+        cursor: pointer;
+      }
+    }
+
+    &__accordionContent {
+      // background-color: rgba(153, 177, 165, 0.3);
+      // padding: 0.5rem;
+    }
+
+    &__accordionContentOpening {
+      // height: 35vh;
+      opacity: 1;
+      flex-direction: column;
+      display: flex;
+      overflow: hidden;
+      transition: all 900ms ease-in-out;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__savingTargets {
+    margin-top: 1rem;
+  }
+
+  &__foodWasteTrackngProgressReportHeading {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  &__targetsMenu {
+    font-size: 11px;
+    color: $blueTuckGreen;
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    align-items: center;
+
+    @include notMoreThanAndEqualTo700px() {
+      width: 100%;
+    }
+  }
+
+  &__foodWasteTrackingProgressBarWrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include notMoreThanAndEqualTo700px() {
+      flex-direction: column;
+    }
+  }
+}
+
+.foodWasteTrackingProgress {
+  &__flexBasis {
+    &__month {
+      flex-basis: 15%;
+
+      @include notMoreThanAndEqualTo700px() {
+        flex-basis: 23%;
+      }
+    }
+
+    &__label {
+      flex-basis: 15%;
+
+      @include notMoreThanAndEqualTo700px() {
+        flex-basis: 23%;
+      }
+    }
+
+    &__kgOrPounds {
+      // flex-basis: 15%;
+      flex-basis: 20%;
+
+      @include notMoreThanAndEqualTo700px() {
+        flex-basis: 33%;
+      }
+    }
+
+    &__percentaged {
+      flex-basis: 15%;
+
+      @include notMoreThanAndEqualTo700px() {
+        flex-basis: 20%;
+      }
+    }
+  }
+
+  &__warningFontSize {
+    font-size: 11px;
+  }
+
+  &__timePeriodHeading {
+    color: #0f808c;
+    font-family: "CooperHewitt-Bold";
+    font-size: 16px;
+
+    @include notMoreThanAndEqualTo700px() {
+      font-size: calc(16px * 0.7);
+    }
+  }
+
+  &__subheading {
+    display: flex;
+    font-size: 11px;
+    align-items: center;
+
+    @include notMoreThanAndEqualTo700px() {
+      font-size: calc(11px * 0.7);
+    }
+  }
+
+  &__wasteValues {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+
+    @include notMoreThanAndEqualTo700px() {
+      font-size: calc(14px * 0.7);
+    }
+  }
+
+  &__icon {
+    font-size: 1.3rem;
+    color: #99b1a5;
+    font-family: "CooperHewitt-Bold";
+  }
+
+  &__logo {
+    height: 40px;
+  }
+
+  &__logo svg path {
+    fill: green !important;
+  }
+
+  &__logo svg text {
+    fill: green !important;
+  }
+
+  &__targets {
+    display: flex;
+    width: 100%;
+    font-size: 13px;
+
+    @include notMoreThanAndEqualTo700px() {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+    }
+  }
+
+  &__impact {
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      width: 30%;
+      justify-content: space-between;
+
+      @include notMoreThanAndEqualTo700px() {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+      }
+    }
+
+    &__text {
+      display: flex;
+      height: 40px;
+      align-items: center;
+      font-size: 13px;
+      @include notMoreThanAndEqualTo700px() {
+        font-size: calc(14px * 0.7);
+      }
+    }
+  }
+
+  &__waste {
+    display: flex;
+    width: 100%;
+
+    &--marginBottom {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__date {
+    font-size: 11px;
+    color: #0f808c;
+    display: flex;
+    justify-content: center;
+    font-family: "CooperHewitt-Bold";
+  }
+
+  &__progressBar {
+    display: flex;
+    align-items: center;
+
+    &__size {
+      height: 50%;
+      width: 24%;
+    }
+  }
+
+  &__icon__sum {
+    display: flex;
+  }
+
+  &__section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  &__impact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 2rem;
+    justify-content: flex-start;
+  }
+
+  &__progressBar {
+    &__wrapper {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      width: 100%;
+      margin-top: 0.3rem;
+
+      @include notMoreThanAndEqualTo700px() {
+        justify-content: space-around;
+      }
+    }
+
+    &__text {
+      display: flex;
+      justify-content: center;
+      color: #0f808c;
+    }
+  }
+
+  &__styling {
+    font-size: 11px;
+    align-items: center;
+    display: flex;
+
+    @include notMoreThanAndEqualTo700px() {
+      font-size: calc(9px * 0.7);
+    }
+  }
+}

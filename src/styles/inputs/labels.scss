@@ -1,0 +1,20 @@
+.section-title {
+  color: #0f808c;
+  font-family: "CooperHewitt-Bold";
+  font-size: 21px;
+  display: flex;
+
+  @include notMoreThanAndEqualTo700px() {
+    font-size: calc(17pt * 0.6);
+  }
+}
+
+.report-subtitle {
+  font-size: 12px;
+  font-family: $font-header;
+  color: $primPurple;
+
+  @include notMoreThanAndEqualTo700px() {
+    font-size: calc(13pt * 0.6);
+  }
+}

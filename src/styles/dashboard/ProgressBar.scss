@@ -1,0 +1,158 @@
+.dashboard__progressBar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  @include notMoreThanAndEqualTo700px() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__one {
+    display: flex;
+    align-items: center;
+    flex-basis: 30%;
+  }
+
+  &__two {
+    display: flex;
+    align-items: center;
+    flex-basis: 70%;
+
+    @include notMoreThanAndEqualTo700px() {
+      margin-top: 1rem;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    // height: 5rem;
+    // justify-content: space-evenly;
+  }
+
+  &__warningText {
+    font-size: 10px;
+    color: red;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+
+    @include mobile() {
+      font-size: 8px;
+    }
+
+    @include tablet() {
+      font-size: 8px;
+    }
+  }
+
+  &__dataRange {
+    font-size: 11px;
+    color: $blueTuckGreen;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text {
+    display: flex;
+    // justify-content: space-around;
+    // margin: 0rem 0rem 0rem 9rem;
+    // width: 65%;
+    justify-content: center;
+    color: $blueTuckGreen;
+    margin-top: 10px;
+
+    @include notMoreThanAndEqualTo700px() {
+      display: flex;
+      // justify-content: space-around;
+      justify-content: center;
+      width: 100%;
+      margin: 0rem;
+    }
+
+    // @include tablet() {
+    //   display: flex;
+    //   justify-content: space-around;
+    //   margin: 0rem 0rem 0rem 9rem;
+    //   width: 65%;
+    //   color: $blueTuckGreen;
+    // }
+  }
+
+  &__textSize {
+    font-size: 12px;
+    margin: 0px;
+
+    @include notMoreThanAndEqualTo700px() {
+      font-size: calc(10pt * 0.6);
+      margin-top: 1px;
+    }
+
+    // @include tablet() {
+    //   font-size: 12px;
+    //   margin: 0px;
+    // }
+  }
+
+  &__size {
+    height: 50%;
+    width: 50%;
+  }
+
+  &__totalWasteValue {
+    display: flex;
+    justify-content: center;
+    // margin: 2rem 0rem 0 0;
+
+    &__wrapper {
+      width: 100%;
+    }
+
+    &--fontSize {
+      font-size: 2rem;
+      // color: $primPurple;
+      margin-right: 5px;
+
+      @include notMoreThanAndEqualTo700px() {
+        // font-size: 13px;
+        // font-size: 20px;
+        color: $primPurple;
+        // margin-top: 7px;
+      }
+
+      // @include tablet() {
+      //   font-size: 2rem;
+      //   color: $primPurple;
+      //   margin-top: 0;
+      // }
+    }
+
+    &--icon {
+      font-size: 2rem;
+      margin: 1rem 0rem 0 0;
+
+      @include mobile() {
+        font-size: 1rem;
+      }
+
+      @include tablet() {
+        font-size: 2rem;
+      }
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: $GreyBlueGreen;
+
+      @include mobile() {
+        margin: 0;
+      }
+
+      @include tablet() {
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.ProductionPreparation {
+  height: 50rem;
+  width: 65rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(153, 177, 165, 0.3);
+  margin: auto;
+  padding-top: 20rem;
+  margin-bottom: 1rem;
+
+  &__spacing {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  &__heading {
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    height: 10%;
+  }
+
+  &__label {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  &__tableLayout {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    // justify-content: space-between;
+    justify-content: space-evenly;
+  }
+
+  &__tableHeading {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    // justify-content: space-evenly;
+  }
+
+  &__inputLayout {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+    input {
+      background: rgba(153, 177, 165, 0);
+      border: none;
+      text-align: center;
+      font-size: 15px;
+      width: 25%;
+      color: rgb(15, 128, 140);
+      font-family: $font-header;
+    }
+
+    ::placeholder {
+      color: rgb(15, 128, 140);
+    }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px rgba(153, 177, 165, 0.5) inset !important;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      margin: 0;
+    }
+  }
+
+  &__autoCalculator {
+    width: 18%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__buttonLayout {
+    height: 4rem;
+    display: flex;
+  }
+}

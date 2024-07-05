@@ -1,0 +1,115 @@
+.dashboard {
+  &__overviewSites--spacing--emailSetting {
+    flex-basis: 25%;
+    padding: 8rem 2rem;
+
+    @include tablet() {
+      padding: 0rem 2rem;
+    }
+
+    @include mobile() {
+      padding: 0rem;
+    }
+
+    @include laptop() {
+      padding: 4rem 2rem;
+    }
+  }
+
+  &__reportsWrapper--emailSetting {
+    flex-basis: 50%;
+    border-right-style: solid;
+    border-right-color: $OliveYellow1;
+    border-left-style: solid;
+    border-left-color: $OliveYellow1;
+    padding: 2rem;
+
+    @include mobile() {
+      padding: 3px;
+    }
+
+    @include tablet() {
+      padding: 2rem;
+    }
+
+    @include laptop() {
+      padding: 2rem;
+      margin: 0rem;
+    }
+  }
+
+  &__reportMenu--emailSetting {
+    display: none;
+
+    @include xxl() {
+      flex-basis: 25%;
+      padding: 3rem 1rem;
+      display: flex;
+    }
+
+    &--positioning {
+      position: fixed;
+      padding-left: 1rem;
+    }
+  }
+}
+
+.userInput--emailSetting {
+  background-color: $backgroundreportcards;
+  height: 50%;
+  border-radius: 5px;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  margin-top: 16rem;
+
+  @include notMoreThanAndEqualTo700px() {
+    background-color: $backgroundreportcards;
+    height: 100vh;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+  }
+
+  // @include tablet() {
+  //   background-color: $backgroundreportcards;
+  //   height: 50%;
+  //   border-radius: 5px;
+  //   padding: 0.7rem;
+  //   margin-bottom: 1rem;
+  // }
+
+  &--center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  &__tableCell {
+    color: $blueTuckGreen;
+    font-weight: 100;
+    text-align: start;
+    font-size: 14px;
+  }
+}
+
+.userInput__sectionTwo--emailSetting {
+  background-color: $backgroundreportcards;
+  height: 50%;
+  border-radius: 5px;
+  padding: 0.7rem;
+
+  @include mobile() {
+    background-color: $backgroundreportcards;
+    height: 60%;
+    border-radius: 5px;
+    padding: 0.7rem;
+  }
+
+  @include tablet() {
+    background-color: $backgroundreportcards;
+    // height: 34%;
+    height: 50%;
+    border-radius: 5px;
+    padding: 0.7rem;
+  }
+}

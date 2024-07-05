@@ -1,0 +1,84 @@
+.modal-wrapper-withImageBackgound {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../image/dashboard.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.modal-wrapper-withoutImageBackgound {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 30%;
+  width: 60%;
+  overflow-y: auto;
+  background-color: white;
+  // background-image: url("../../image/green_kode.svg");
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  // z-index: 101;
+  padding: 40px;
+}
+
+.modal-box-withoutbox {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  // background-color: white;
+  // box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  z-index: 101;
+  padding: 40px;
+}
+
+.modal-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content {
+  color: $primPurple;
+  padding: 1rem 0;
+}
+
+.css-0 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: white;
+}

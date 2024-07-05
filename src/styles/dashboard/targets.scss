@@ -1,0 +1,17 @@
+.targets {
+  background-color: rgba(153, 177, 165, 0.3);
+  height: 100%;
+  border-radius: 5px;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  width: 100%;
+
+  @include notMoreThanAndEqualTo700px() {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.userInput__input input[type="number"] {
+  padding: 0;
+}

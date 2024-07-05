@@ -1,0 +1,17 @@
+button {
+  height: 2rem;
+  border: none;
+  color: white;
+  background: $MarineOliverGreen;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  cursor: pointer;
+  align-items: center;
+  font-size: 12px;
+
+  @include notMoreThanAndEqualTo700px() {
+    font-size: 10px;
+  }
+}

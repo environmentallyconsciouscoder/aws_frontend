@@ -1,0 +1,16 @@
+.weeklyWasteTrend {
+  &--poundsKgsAndDateWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--totalWasteAndKgAndPounds {
+    display: flex;
+  }
+
+  &--dataRangeStyle {
+    font-size: 11px;
+    color: #0f808c;
+    display: flex;
+  }
+}

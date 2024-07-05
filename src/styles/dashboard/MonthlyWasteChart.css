@@ -1,0 +1,21 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 8  | /   @include notMoreThanAndEqualTo700px() {
+ * 9  | |     background-color: $backgroundreportcards;
+ * 10 | |     border-radius: 5px;
+ * 11 | |     margin-bottom: 1rem;
+ * 12 | |     width: 100%;
+ * 13 | \   }
+ *    '
+ *   src/styles/dashboard/MonthlyWasteChart.scss 8:3  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 8  \2502  \250c    @include notMoreThanAndEqualTo700px() {\a 9  \2502  \2502      background-color: $backgroundreportcards;\a 10 \2502  \2502      border-radius: 5px;\a 11 \2502  \2502      margin-bottom: 1rem;\a 12 \2502  \2502      width: 100%;\a 13 \2502  \2514    }\a    \2575 \a   src/styles/dashboard/MonthlyWasteChart.scss 8:3  root stylesheet";
+}

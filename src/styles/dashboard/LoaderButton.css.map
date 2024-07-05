@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC,SAAS,AAAA,UAAU,CAAC;EAChC,YAAY,EAAE,GAAG;EACjB,GAAG,EAAE,GAAG;EACR,SAAS,EAAE,uBAAuB;EAClC,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,KAAK;CACxB;;AACD,UAAU,CAAV,IAAU;EACR,IAAI;IACF,SAAS,EAAE,QAAQ,CAAC,YAAY;;EAElC,EAAE;IACA,SAAS,EAAE,QAAQ,CAAC,cAAc",
+    "sources": [
+        "LoaderButton.scss"
+    ],
+    "names": [],
+    "file": "LoaderButton.css"
+}
